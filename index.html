@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plant Disease Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Plant Disease Detection System</h1>
+        <p>Upload an image of a plant leaf to detect any diseases.</p>
+
+        <form id="uploadForm">
+            <input type="file" id="plantImage" accept="image/*" required />
+            <button type="submit">Submit Image</button>
+        </form>
+
+        <div id="result" class="result">
+            <h3>Detection Result:</h3>
+            <p id="diseaseName">No disease detected yet.</p>
+            <p id="diseaseDescription"></p>
+        </div>
+        
+        <div id="error" class="error">
+            <p>Something went wrong. Please try again.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
